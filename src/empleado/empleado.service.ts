@@ -23,8 +23,8 @@ export class EmpleadoService {
     empleadoDto.fecha = empleado.fecha;
     empleadoDto.decimo_tercero = empleado.salario-600/12;
     empleadoDto.decimo_cuarto = empleado.salario / 12;
-    empleadoDto.fondo = empleado.salario * 8.33;
-    empleadoDto.pago_iess = empleado.salario * 9.43;
+    empleadoDto.fondo = empleado.salario * 8.33 / 100;
+    empleadoDto.pago_iess = empleado.salario * 9.43 / 100;
     empleadoDto.total_pagar =
       empleado.salario +
       empleadoDto.decimo_tercero +
